@@ -1,4 +1,11 @@
 ## sdchain-explorer
+```
+cd front
+npm install -d
+npm run build
 
-sdchain区块浏览器
+cd ..
+npm install -d
+node index.js
+```
 
