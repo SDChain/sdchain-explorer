@@ -1,0 +1,263 @@
+@import url('./var.less');
+@import url("//at.alicdn.com/t/font_943719_d5m42s7hvrd.css");
+@import url("//at.alicdn.com/t/font_943719_y4z5iuvre.css");  //add
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src:url('../font/fonts.woff2') format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+html,body{
+    font-family:'Roboto', "Microsoft YaHei","PingFang SC","Arial",serif!important;
+    font-size:14px;
+    margin:0;padding:0;background:@mainbg;
+    color:@txtColor1;
+}
+.main{
+    max-width:@max-width;
+    min-width:@min-width;
+    margin:0 auto;
+    padding:0 20px;
+}
+.titlebar{
+    padding-bottom:15px;
+    .h3{
+        box-sizing: border-box;
+        display: inline-block;
+        width:60%;
+        font-size:15px;
+        font-weight:bold;
+    }
+    span{
+        display: inline-block;
+        font-size:12px;
+        text-align:right;
+        width: 40%;
+    }
+}
+
+h1{
+    font-size:16px;
+    color:#313131;
+    margin:15px 0;
+    span{
+        color:#B8B8B8;
+        font-size:14px;
+        font-weight:normal;
+        margin-left:10px;
+    }
+}
+
+.suc{color:@sucess}
+.err{color:@mainColor1}
+
+.breadcrumb{
+    margin:15px 0;
+    color:@txtColor1;
+}
+
+
+.langlist{
+    .ivu-select-dropdown{border-radius:0!important}
+    .ivu-select-dropdown{background:rgba(255, 255, 255, 1);padding:0;}
+    .ivu-dropdown-item{padding:8px 0;border-right:2px solid rgba(255, 255, 255, 1)}
+    .ivu-dropdown-item:hover{background:rgba(232, 172, 167, .1);border-right:2px solid @sdc-mainColor1}
+}
+.table{
+    .ivu-table-wrapper, .ivu-table td, .ivu-table th, .ivu-table-wrapper>.ivu-spin-fix{border:none;}
+    .ivu-table:before, .ivu-table:after{height:0;width:0}
+}
+
+.ivu-table-wrapper, .ivu-table-wrapper>.ivu-spin-fix{border:none;}
+.ivu-table:before, .ivu-table:after{height:0;width:0}
+
+.ivu-spin-dot{
+    background-color:@sdc-mainColor1;
+}
+.ivu-input{
+    font-size: 12px;
+    text-indent: 20px;
+    border-color:#A2C2F7;
+    color: #fff;
+    text-indent: 18px;
+    padding-left:20px;
+    // border-color:@sdc-mainColor2;
+    &:focus{
+        border:none;
+        border-color:none;
+        border-left:none;
+        border-top:none;
+        border-right:none;
+        border-radius: 0px;
+        box-shadow: none;
+        border-bottom:1px solid #A2C2F7;
+        text-indent: 18px;
+    }
+    &:hover{
+        border-bottom:1px solid #A2C2F7;
+        border-color:none;
+        border-left:none;
+        border-top:none;
+        border-right:none;
+        text-indent: 18px;
+        border-radius: 0px;
+    }
+    &::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+        color:#A3C1F5;
+    }
+    &:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+        color:#A3C1F5;
+    }
+    &::-moz-placeholder { /* Mozilla Firefox 19+ */
+        color:#A3C1F5;
+    }
+    &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+        color:#A3C1F5;
+    }
+}
+.ivu-input-with-search:hover .ivu-input{
+    border-color:@mainColor2;
+    border-left:none;
+    border-top:none;
+    border-right:none;
+    border-radius: 0px;
+}
+.ivu-btn-ghost.ivu-btn-primary{
+    background:none;
+    color:@sdc-mainColor1;
+    // border-left:none;
+    // border-top:none;
+    // border-right:none;
+    // border-radius: 0px;
+    &:hover{
+        color:@sdc-mainColor2;
+        // border-left:none;
+        // border-top:none;
+        // border-right:none;
+        // border-radius: 0px;
+    }
+}
+.ivu-btn-primary{
+    border-color:@sdc-mainColor1;
+    background-color: @sdc-mainColor1;
+    &:hover{border-color:@sdc-mainColor2;background-color: @sdc-mainColor2;}
+    &:focus{
+        box-shadow:0 0 0 1px rgba(77, 173, 230, 0.27);
+    }
+}
+.more{
+    button{
+        span{
+            font-size:14px;
+        }
+    }
+}
+.ivu-input-with-suffix{
+    border-left:none;
+    border-top:none;
+    border-right:none;
+    border-radius: 0px;
+    background: transparent;
+}
+.ivu-input-icon{
+    left:0;
+}
+.success, .error{
+    display: inline-block;
+    background:#1FAC39;
+    padding:2px 10px;
+    border-radius:4px;
+    color: #fff;
+    line-height: 18px
+}
+.error{
+    background: @mainColor1;
+}
+.search{
+    .ivu-input-search-icon{
+        background: none !important;
+        color: #A3C1F5 !important;
+        border-radius:0 4px 4px 0;
+        font-size: 26px;
+        margin-left: -5px;
+    }
+}
+.ivu-input-search{
+    background:@mainColor1!important;
+    border-color:@mainColor1!important;
+    border-left:none;
+    border-top:none;
+    border-right:none;
+    border-radius: 0px;
+    &:hover{
+        border-left:none;
+        border-top:none;
+        border-right:none;
+        border-radius: 0px;
+    }
+}
+ .ivu-radio-group-button .ivu-radio-wrapper-checked:hover, .ivu-radio-group-button .ivu-radio-wrapper:hover{
+    border-color:@mainColor1;
+    color:@mainColor1;
+    box-shadow:-1px 0 0 0 @mainColor1;
+    outline: none;
+}
+
+.ivu-radio-group-button .ivu-radio-wrapper-checked{
+    border-color:@mainColor1;
+    color:@mainColor1;
+    box-shadow:-1px 0 0 0 @mainColor1!important;
+    &:first-child{
+        border-color:@mainColor1;
+        color:@mainColor1;
+        box-shadow:none!important;
+        &:hover{
+            box-shadow:none!important;
+        }
+    }
+}
+.ivu-radio-group-button .ivu-radio-wrapper{
+    &:first-child{
+        &:hover{
+            box-shadow:none!important;
+        }
+    }
+    &:before{
+        background:none!important;
+    }
+    &:after{
+        background:none!important;
+    }
+}
+.ivu-radio-group-button .ivu-radio-wrapper-checked{
+    outline: none;
+    &:before{background: @mainColor1;}
+    &:focus{
+        box-shadow:0 0 0 2px rgba(232, 172, 167, .6)!important;
+        
+    }
+    &:before{
+        background:none!important;
+    }
+    &:after{
+        background:none!important;
+    }
+}
+.ivu-table-row-hover td{
+    background: #e0f0ff85 !important;
+}
+
+.vertical-center-modal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .ivu-modal{
+        top: 0;
+    }
+}
+table{
+    
+}
